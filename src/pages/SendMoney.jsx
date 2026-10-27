@@ -29,10 +29,10 @@ export default function SendMoney() {
         <div className="mt-6 flex gap-2 justify-center">
           <Link to="home">
             <button className="px-5 py-2 rounded-lg bg-paytm text-white font-medium hover:bg-paytm-dark transition">Done</button>
-          </button>
+          </Link>
           <Link to="send">
             <button className="px-5 py-2 rounded-lg border border-gray-200 text-gray-700 font-medium hover:bg-gray-50 transition">Send Again</button>
-          </button>
+          </Link>
         </div>
       </div>
     );

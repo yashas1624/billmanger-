@@ -55,7 +55,7 @@ export default function Transactions() {
       <div className="px-4 py-6 text-center">
         <Link to="home">
           <button className="text-xs font-medium text-paytm underline underline-offset-4">← Back to Home</button>
-        </button>
+        </Link>
       </div>
     </div>
   );

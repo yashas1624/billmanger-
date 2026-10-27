@@ -3,6 +3,7 @@ import { Link } from '../App';
 import WalletCard from '../components/WalletCard';
 import SectionHeader from '../components/SectionHeader';
 import TransactionItem from '../components/TransactionItem';
+import OfferCard from '../components/OfferCard';
 import { TRANSACTIONS, OFFERS } from '../data/mockData';
 
 export default function Home() {

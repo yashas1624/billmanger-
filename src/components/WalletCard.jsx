@@ -47,7 +47,11 @@ export default function WalletCard() {
                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
               )}
               {action.icon === 'bank' && (
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" /><path d="M3 9h18" /><path d="M3 15h18" />
+                <>
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                  <path d="M3 9h18" />
+                  <path d="M3 15h18" />
+                </>
               )}
               {action.icon === 'ticket' && (
                 <path d="M2 3h8a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1z" />
@@ -56,7 +60,10 @@ export default function WalletCard() {
                 <path d="M12 2l4 8v9a6 6 0 0 1-6 6c-3.314 0-6-2.686-6-6V10l4-8z" />
               )}
               {action.icon === 'invest' && (
-                <path d="M10 20v-6l4-4 4 4v6" /><circle cx="12" cy="10" r="2" />
+                <>
+                  <path d="M10 20v-6l4-4 4 4v6" />
+                  <circle cx="12" cy="10" r="2" />
+                </>
               )}
               {action.icon === 'gold' && (
                 <path d="M12 2L3 7v6l9 5 9-5V7z" />
