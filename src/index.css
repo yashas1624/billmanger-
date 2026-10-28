@@ -1,41 +1,132 @@
+/**
+ * Design System — Paytm Brand Tokens
+ * Following frontend design principles: spacing scale, typographic hierarchy,
+ * color semantics, elevation system, and responsive breakpoints
+ */
 @import "tailwindcss";
 
 @theme {
+  /* ── Brand Colors ── */
   --color-paytm: #005bbb;
   --color-paytm-dark: #003d82;
   --color-paytm-light: #e6f2ff;
+  --color-paytm-glass: rgba(0, 91, 187, 0.08);
+
+  /* ── Semantic Colors ── */
   --color-success: #00b86b;
   --color-success-light: #e7f7ef;
+  --color-success-glass: rgba(0, 184, 107, 0.1);
   --color-warning: #ff9500;
   --color-warning-light: #fff4e0;
+  --color-warning-glass: rgba(255, 149, 0, 0.1);
   --color-danger: #ff3b30;
   --color-danger-light: #fff0f0;
-  --color-gray-bg: #f5f5f8;
-  --color-card-border: #eaeaef;
-  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  --radius-xl: 16px;
-  --radius-lg: 12px;
-  --radius-md: 8px;
+  --color-danger-glass: rgba(255, 59, 48, 0.1);
+  --color-info: #6c5ce7;
+  --color-info-light: #f0e6ff;
+  --color-info-glass: rgba(108, 92, 231, 0.1);
+
+  /* ── Neutral Scale ── */
+  --color-gray-50: #f9fafb;
+  --color-gray-100: #f5f5f8;
+  --color-gray-200: #eaeaef;
+  --color-gray-300: #d4d5da;
+  --color-gray-400: #a5a6ad;
+  --color-gray-500: #73737f;
+  --color-gray-600: #4b4c55;
+  --color-gray-700: #2b2c33;
+  --color-gray-800: #1f2025;
+  --color-gray-900: #0f0f12;
+
+  /* ── Backgrounds ── */
+  --color-bg-body: #f5f5f8;
+  --color-bg-card: #ffffff;
+  --color-bg-overlay: rgba(15, 15, 18, 0.45);
+
+  /* ── Borders ── */
+  --color-border: #eaeaef;
+  --color-border-focus: #005bbb;
+
+  /* ── Typography ── */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, 'SF Mono', Consolas, 'Liberation Mono', monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
+  --text-4xl: 2.25rem;
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* ── Spacing Scale ── */
+  --space-px: 1px;
+  --space-0: 0;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+
+  /* ── Border Radius ── */
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-full: 9999px;
+
+  /* ── Elevation / Shadows ── */
+  --shadow-xs: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-sm: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --shadow-paytm: 0 10px 25px -5px rgba(0, 91, 187, 0.15);
+  --shadow-inner: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+
+  /* ── Transitions ── */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
   margin: 0;
   font-family: var(--font-sans);
-  color: #0f0f12;
-  background: var(--color-gray-bg);
+  color: var(--color-gray-900);
+  background: var(--color-bg-body);
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
 }
 
 #root {
   min-height: 100svh;
   display: flex;
   flex-direction: column;
+  isolation: isolate;
 }
 
+/* ── Utilities ── */
 .sr-only {
   position: absolute;
   width: 1px;
@@ -45,4 +136,84 @@ body {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-border-focus);
+  outline-offset: 2px;
+}
+
+/* ── Glass Panel ── */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ── Gradient Text ── */
+.text-gradient {
+  background: linear-gradient(135deg, var(--color-paytm) 0%, var(--color-paytm-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Skeleton Animation ── */
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+.skeleton {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ── Animated Gradient Background ── */
+.gradient-bg {
+  background: linear-gradient(
+    135deg,
+    var(--color-paytm) 0%,
+    var(--color-paytm-dark) 50%,
+    #002d66 100%
+  );
+}
+
+/* ── Responsive Breakpoints (mobile-first) ── */
+@media (min-width: 640px) { /* sm */ }
+@media (min-width: 768px) { /* md */ }
+@media (min-width: 1024px) { /* lg */ }
+@media (min-width: 1280px) { /* xl */ }
+
+/* ── Dark Mode Support ── */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-body: #0f0f12;
+    --color-bg-card: #1a1a1e;
+    --color-border: #2d2e34;
+    --color-gray-100: #1a1a1e;
+    --color-gray-200: #2d2e34;
+    --color-gray-500: #a5a6ad;
+    --color-gray-400: #d4d5da;
+    color: #f5f5f8;
+  }
+}
+
+/* ── Print Styles ── */
+@media print {
+  .no-print { display: none !important; }
 }
