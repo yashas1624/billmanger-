@@ -1,90 +1,54 @@
-import React, { createContext, useContext, useState, Children, cloneElement } from 'react';
-import Layout from './components/Layout';
+import React from 'react';
+import { BillProvider, useBills } from './context/BillContext';
+import Navbar from './components/Navbar';
 import Home from './pages/Home';
-import SendMoney from './pages/SendMoney';
-import ReceiveMoney from './pages/ReceiveMoney';
-import Recharge from './pages/Recharge';
-import Postpaid from './pages/Postpaid';
-import Transactions from './pages/Transactions';
-import TransactionDetail from './pages/TransactionDetail';
-import Offers from './pages/Offers';
-import AddMoney from './pages/AddMoney';
-import More from './pages/More';
-import KYC from './pages/KYC';
-import BankAccounts from './pages/BankAccounts';
-import PaymentMethods from './pages/PaymentMethods';
-import Investments from './pages/Investments';
-import Insurance from './pages/Insurance';
-import Travel from './pages/Travel';
-import Movies from './pages/Movies';
-import Help from './pages/Help';
-import Notifications from './pages/Notifications';
-import QRScanner from './pages/QRScanner';
-import ClipboardDemo from './components/ClipboardDemo';
+import Insights from './pages/Insights';
+import CalendarView from './components/dashboard/CalendarView';
+import AddBillModal from './components/bills/AddBillModal';
+import BillDetailModal from './components/bills/BillDetailModal';
+import Toast from './components/Toast';
 
-/* ------------------------------------------------------------------ */
-/*  Client-side page context                                          */
-/* ------------------------------------------------------------------ */
-
-const PageContext = createContext(null);
-
-export function usePage() {
-  const ctx = useContext(PageContext);
-  if (!ctx) {
-    throw new Error('usePage must be used within a PageProvider');
-  }
-  return ctx;
-}
-
-export function Link({ to, children }) {
-  const { setPage } = usePage();
-  const child = Children.only(children);
-  return cloneElement(child, {
-    onClick: (e) => {
-      e.preventDefault();
-      setPage(to);
-    },
-  });
-}
-
-/* ------------------------------------------------------------------ */
-/*  Routes                                                            */
-/* ------------------------------------------------------------------ */
-
-const PAGES = {
-  home: Home,
-  send: SendMoney,
-  receive: ReceiveMoney,
-  recharge: Recharge,
-  postpaid: Postpaid,
-  transactions: Transactions,
-  offers: Offers,
-  'add-money': AddMoney,
-  more: More,
-  kyc: KYC,
-  'bank-accounts': BankAccounts,
-  'payment-methods': PaymentMethods,
-  investments: Investments,
-  insurance: Insurance,
-  travel: Travel,
-  movies: Movies,
-  help: Help,
-  notifications: Notifications,
-  qr: QRScanner,
-  clipboard: ClipboardDemo,
-};
-
-export default function App() {
-  const [page, setPage] = useState('home');
-
-  const Comp = page.startsWith('tx/') ? TransactionDetail : PAGES[page] || Home;
-  const txId = page.startsWith('tx/') ? page.slice(3) : null;
+function AppContent() {
+  const { activeTab } = useBills();
 
   return (
-    <PageContext.Provider value={{ page, setPage }}>
-      <Layout>
-        <Comp txId={txId} />
-      </Layout>
-    </PageContext.Provider>
+    <div className="min-h-screen bg-[#f8fafc] dark:bg-[#0a0f1d] text-slate-900 dark:text-slate-100 flex flex-col transition-colors duration-200">
+      {/* Top Navbar */}
+      <Navbar />
+
+      {/* Main Container */}
+      <main className="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 pt-6 sm:pt-8">
+        {activeTab === 'dashboard' && <Home />}
+        {activeTab === 'insights' && <Insights />}
+        {activeTab === 'calendar' && (
+          <div className="space-y-6 pb-12">
+            <div>
+              <h2 className="text-2xl font-black tracking-tight text-slate-900 dark:text-white">
+                Monthly Schedule & Calendar
+              </h2>
+              <p className="text-xs text-slate-500">
+                Visual timeline of upcoming bill due dates and obligations
+              </p>
+            </div>
+            <CalendarView />
+          </div>
+        )}
+      </main>
+
+      {/* Interactive Modals & Drawers */}
+      <AddBillModal />
+      <BillDetailModal />
+
+      {/* Undoable Feedback Toast */}
+      <Toast />
+    </div>
+  );
+}
+
+export default function App() {
+  return (
+    <BillProvider>
+      <AppContent />
+    </BillProvider>
   );
 }
