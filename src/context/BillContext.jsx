@@ -1,5 +1,6 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 import { INITIAL_BILLS } from '../data/mockBills';
+import { api } from '../services/api';
 
 const BillContext = createContext(null);
 
@@ -23,11 +24,13 @@ export function BillProvider({ children }) {
     }
   });
 
-  const [activeTab, setActiveTab] = useState('dashboard'); // 'dashboard' | 'insights' | 'calendar'
+  const [backendConnected, setBackendConnected] = useState(false);
+  const [activeTab, setActiveTab] = useState('dashboard'); // 'dashboard' | 'insights' | 'calendar' | 'db-sheet'
   const [filter, setFilter] = useState('all'); // 'all' | 'due_soon' | 'overdue' | 'paid' | 'split'
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedBillId, setSelectedBillId] = useState(null);
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+  const [isWorkerRunning, setIsWorkerRunning] = useState(false);
   
   // Toast notifications with Undo capability
   const [toast, setToast] = useState(null);
@@ -44,7 +47,7 @@ export function BillProvider({ children }) {
     }
   }, [darkMode]);
 
-  // Save bills to localStorage
+  // Save bills to localStorage for offline cache
   useEffect(() => {
     try {
       localStorage.setItem('bm_bills', JSON.stringify(bills));
@@ -52,6 +55,33 @@ export function BillProvider({ children }) {
       console.error('Failed to save bills', e);
     }
   }, [bills]);
+
+  // Load live bills from backend
+  const loadBillsFromBackend = useCallback(async () => {
+    try {
+      const data = await api.getBills();
+      if (data && Array.isArray(data.bills)) {
+        // Normalize status to lowercase for UI compatibility
+        const formattedBills = data.bills.map(b => ({
+          ...b,
+          status: b.status.toLowerCase()
+        }));
+        setBills(formattedBills);
+        setBackendConnected(true);
+      }
+    } catch (err) {
+      // Backend not running yet or offline; fallback cleanly to local state
+      console.log('[BillContext] Backend offline, running in offline fallback mode:', err.message);
+      setBackendConnected(false);
+    }
+  }, []);
+
+  // Poll or check backend connection on mount
+  useEffect(() => {
+    loadBillsFromBackend();
+    const interval = setInterval(loadBillsFromBackend, 15000); // sync every 15s
+    return () => clearInterval(interval);
+  }, [loadBillsFromBackend]);
 
   const showToast = (message, undoAction = null) => {
     setToast(message);
@@ -69,11 +99,14 @@ export function BillProvider({ children }) {
     }
   };
 
-  const markAsPaid = (id) => {
+  const markAsPaid = async (id) => {
     const prevBills = [...bills];
+    const target = bills.find(b => b.id === id);
+    const isRecurring = Boolean(target?.isRecurring || (target?.frequency && target?.frequency.toLowerCase() !== 'one-time'));
+
+    // Optimistic UI update
     setBills(prev => prev.map(b => {
       if (b.id === id) {
-        const isRecurring = Boolean(b.isRecurring || (b.frequency && b.frequency.toLowerCase() !== 'one-time'));
         return {
           ...b,
           status: 'paid',
@@ -91,12 +124,24 @@ export function BillProvider({ children }) {
       return b;
     }));
 
+    // Trigger backend route
+    if (backendConnected) {
+      try {
+        await api.markBillAsPaid(id);
+      } catch (e) {
+        console.warn('[BillContext] Failed to sync paid status to backend:', e);
+      }
+    }
+
     showToast('Bill marked as paid! 🎉', () => {
       setBills(prevBills);
+      if (backendConnected && target) {
+        api.updateBill(id, { status: target.status, reminderSent: target.reminderSent }).catch(() => {});
+      }
     });
   };
 
-  const addBill = (newBill) => {
+  const addBill = async (newBill) => {
     const isRecurring = Boolean(newBill.isRecurring || (newBill.frequency && newBill.frequency.toLowerCase() !== 'one-time'));
     const created = {
       reminderSent: false,
@@ -112,24 +157,58 @@ export function BillProvider({ children }) {
         }
       ]
     };
+
     setBills(prev => [created, ...prev]);
     showToast(`Added ${created.title} successfully.`);
     setIsAddModalOpen(false);
+
+    if (backendConnected) {
+      try {
+        await api.createBill({
+          ...created,
+          status: 'PENDING'
+        });
+        loadBillsFromBackend();
+      } catch (e) {
+        console.warn('[BillContext] Failed to save bill to backend:', e);
+      }
+    }
   };
 
-  const updateBill = (id, updatedFields) => {
+  const updateBill = async (id, updatedFields) => {
     setBills(prev => prev.map(b => b.id === id ? { ...b, ...updatedFields } : b));
     showToast('Bill details updated.');
+
+    if (backendConnected) {
+      try {
+        await api.updateBill(id, updatedFields);
+        loadBillsFromBackend();
+      } catch (e) {
+        console.warn('[BillContext] Failed to update bill on backend:', e);
+      }
+    }
   };
 
-  const deleteBill = (id) => {
+  const deleteBill = async (id) => {
     const prevBills = [...bills];
     const target = bills.find(b => b.id === id);
     setBills(prev => prev.filter(b => b.id !== id));
     if (selectedBillId === id) setSelectedBillId(null);
+
     showToast(`Deleted ${target?.title || 'bill'}.`, () => {
       setBills(prevBills);
+      if (backendConnected && target) {
+        api.createBill(target).catch(() => {});
+      }
     });
+
+    if (backendConnected) {
+      try {
+        await api.deleteBill(id);
+      } catch (e) {
+        console.warn('[BillContext] Failed to delete bill on backend:', e);
+      }
+    }
   };
 
   const toggleSplitMember = (billId, memberId) => {
@@ -142,6 +221,24 @@ export function BillProvider({ children }) {
       }
       return b;
     }));
+  };
+
+  const runSchedulerWorker = async (targetDate = null) => {
+    setIsWorkerRunning(true);
+    try {
+      const response = await api.runWorkerReminders(targetDate);
+      if (response?.success && response?.result) {
+        const { reminders, overdue } = response.result;
+        showToast(`Worker finished: ${reminders.sentCount} reminders sent, ${overdue.overdueUpdatedCount} overdue updated.`);
+        await loadBillsFromBackend();
+      } else {
+        showToast('Background worker executed.');
+      }
+    } catch (err) {
+      showToast(`Worker trigger failed: ${err.message}`);
+    } finally {
+      setIsWorkerRunning(false);
+    }
   };
 
   const selectedBill = bills.find(b => b.id === selectedBillId) || null;
@@ -163,6 +260,10 @@ export function BillProvider({ children }) {
         selectedBill,
         isAddModalOpen,
         setIsAddModalOpen,
+        backendConnected,
+        refreshBills: loadBillsFromBackend,
+        runSchedulerWorker,
+        isWorkerRunning,
         markAsPaid,
         addBill,
         updateBill,

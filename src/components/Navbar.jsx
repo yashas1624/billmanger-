@@ -9,6 +9,7 @@ import {
   PieChart, 
   LayoutDashboard, 
   Calendar,
+  Database,
   Bell,
   Sparkles
 } from 'lucide-react';
@@ -22,7 +23,8 @@ export default function Navbar() {
     searchQuery, 
     setSearchQuery, 
     setIsAddModalOpen,
-    bills
+    bills,
+    backendConnected
   } = useBills();
 
   const overdueCount = bills.filter(b => b.status === 'overdue').length;
@@ -89,6 +91,19 @@ export default function Navbar() {
             >
               <Calendar className="w-4 h-4" />
               <span>Calendar</span>
+            </button>
+
+            <button
+              onClick={() => setActiveTab('db-sheet')}
+              className={`flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-sm font-semibold transition-all relative ${
+                activeTab === 'db-sheet'
+                  ? 'bg-white dark:bg-slate-900 text-emerald-600 dark:text-emerald-400 shadow-xs'
+                  : 'text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white'
+              }`}
+            >
+              <Database className="w-4 h-4" />
+              <span>DB Sheet</span>
+              <span className={`w-2 h-2 rounded-full ${backendConnected ? 'bg-emerald-500' : 'bg-amber-400'}`} />
             </button>
           </nav>
 
@@ -177,6 +192,18 @@ export default function Navbar() {
         >
           <Calendar className="w-4 h-4" />
           <span>Calendar</span>
+        </button>
+
+        <button
+          onClick={() => setActiveTab('db-sheet')}
+          className={`flex flex-col items-center gap-0.5 text-xs font-semibold py-1 px-3 rounded-lg ${
+            activeTab === 'db-sheet'
+              ? 'text-emerald-600 dark:text-emerald-400'
+              : 'text-slate-500 dark:text-slate-400'
+          }`}
+        >
+          <Database className="w-4 h-4" />
+          <span>DB Sheet</span>
         </button>
       </div>
     </header>

@@ -4,6 +4,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Insights from './pages/Insights';
 import CalendarView from './components/dashboard/CalendarView';
+import DBSheet from './pages/DBSheet';
 import AddBillModal from './components/bills/AddBillModal';
 import BillDetailModal from './components/bills/BillDetailModal';
 import Toast from './components/Toast';
@@ -33,6 +34,7 @@ function AppContent() {
             <CalendarView />
           </div>
         )}
+        {activeTab === 'db-sheet' && <DBSheet />}
       </main>
 
       {/* Interactive Modals & Drawers */}
