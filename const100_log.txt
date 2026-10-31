@@ -1,0 +1,816 @@
+status: done
+game 913360470
+options: seed=556396483
+    pod_timeout=100
+    map=12006 2007 13981 2986 4015 7802
+    pod_per_player=1
+agents:
+  0 cobra_x (me, agent_id -1)
+  1 Boss 2 (agent_id 415946)
+frame 0
+  summary: $0 rank: 1
+      $1 rank: 1
+frame 1 agent 0
+  referee: Pod 1 of player $0 moves towards (13981, 2986) at power 100
+  stdout: 13981 2986 100
+frame 2 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 1
+      $1 rank: 2
+  stdout: 13981 2986 100
+frame 3 agent 0
+  referee: Pod 1 of player $0 moves towards (12306, 1622) at power 100
+  stdout: 12306 1622 100
+frame 4 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 5 agent 0
+  referee: Pod 1 of player $0 moves towards (12371, 1675) at power 100
+  stdout: 12371 1675 100
+frame 6 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 7 agent 0
+  referee: Pod 1 of player $0 moves towards (12426, 1720) at power 100
+  stdout: 12426 1720 100
+frame 8 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 9 agent 0
+  referee: Pod 1 of player $0 moves towards (12472, 1758) at power 100
+  stdout: 12472 1758 100
+frame 10 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 11 agent 0
+  referee: Pod 1 of player $0 moves towards (12511, 1790) at power 100
+  stdout: 12511 1790 100
+frame 12 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 13 agent 0
+  referee: Pod 1 of player $0 moves towards (12544, 1817) at power 100
+  stdout: 12544 1817 100
+frame 14 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 15 agent 0
+  referee: Pod 1 of player $0 moves towards (12572, 1839) at power 100
+  stdout: 12572 1839 100
+frame 16 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 50
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 50
+frame 17 agent 0
+  referee: Pod 1 of player $0 moves towards (12595, 1857) at power 100
+  stdout: 12595 1857 100
+frame 18 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 50
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 50
+frame 19 agent 0
+  referee: Pod 1 of player $0 moves towards (12614, 1872) at power 100
+  stdout: 12614 1872 100
+frame 20 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 50
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 50
+frame 21 agent 0
+  referee: Pod 1 of player $0 moves towards (12630, 1884) at power 100
+  stdout: 12630 1884 100
+frame 22 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 23 agent 0
+  referee: Pod 1 of player $0 moves towards (12643, 1894) at power 100
+  stdout: 12643 1894 100
+frame 24 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 25 agent 0
+  referee: Pod 1 of player $0 moves towards (12654, 1902) at power 100
+  stdout: 12654 1902 100
+frame 26 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 27 agent 0
+  referee: Pod 1 of player $0 moves towards (12663, 1908) at power 100
+  stdout: 12663 1908 100
+frame 28 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 29 agent 0
+  referee: Pod 1 of player $0 moves towards (12670, 1913) at power 100
+  stdout: 12670 1913 100
+frame 30 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 31 agent 0
+  referee: Pod 1 of player $0 moves towards (12675, 1917) at power 100
+  stdout: 12675 1917 100
+frame 32 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 33 agent 0
+  referee: Pod 1 of player $0 moves towards (12679, 1920) at power 100
+  stdout: 12679 1920 100
+frame 34 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 35 agent 0
+  referee: Pod 1 of player $0 moves towards (12682, 1922) at power 100
+  stdout: 12682 1922 100
+frame 36 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 37 agent 0
+  referee: Pod 1 of player $0 moves towards (12684, 1923) at power 100
+  stdout: 12684 1923 100
+frame 38 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 39 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 40 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 41 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 42 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 43 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 44 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 45 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 46 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 47 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 48 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 49 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 50 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 51 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 52 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 53 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 54 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 55 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 56 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 57 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 58 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 59 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 60 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 61 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 62 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 63 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 64 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 65 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 66 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 67 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 68 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 69 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 70 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 71 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 72 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 73 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 74 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 75 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 76 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 50
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 50 I'm too fast in curves!
+frame 77 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 78 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 50
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 50 I'm too fast in curves!
+frame 79 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 80 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 50
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 50 I'm too fast in curves!
+frame 81 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 82 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100 I'm too fast in curves!
+frame 83 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 84 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100 I'm too fast in curves!
+frame 85 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 86 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100 I'm too fast in curves!
+frame 87 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 88 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100 I'm too fast in curves!
+frame 89 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 90 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100 I'm too fast in curves!
+frame 91 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 92 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100 I'm too fast in curves!
+frame 93 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 94 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100
+frame 95 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 96 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100
+frame 97 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 98 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100
+frame 99 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 100 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100
+frame 101 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 102 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100
+frame 103 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 104 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100
+frame 105 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 106 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100
+frame 107 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 108 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100
+frame 109 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 110 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100
+frame 111 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 112 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100
+frame 113 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 114 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100
+frame 115 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 116 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100
+frame 117 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 118 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100
+frame 119 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 120 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100
+frame 121 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 122 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100
+frame 123 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 124 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100
+frame 125 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 126 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100
+frame 127 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 128 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100
+frame 129 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 130 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100
+frame 131 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 132 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100
+frame 133 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 134 agent 1
+  referee: Pod 1 of player $1 moves towards (12006, 2007) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 12006 2007 100
+frame 135 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 136 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 137 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 138 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 139 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 140 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 141 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 142 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 143 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 144 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 145 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 146 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 147 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 148 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 149 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 150 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 151 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 152 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 153 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 154 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 155 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 156 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 157 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 158 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 159 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 160 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 161 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 162 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 163 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 164 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 165 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 166 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 167 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 168 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 169 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 170 agent 1
+  referee: Pod 1 of player $1 moves towards (13981, 2986) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13981 2986 100
+frame 171 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 172 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 50
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 50
+frame 173 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 174 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 50
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 50
+frame 175 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 176 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 50
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 50
+frame 177 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 178 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 179 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 180 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 181 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 182 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 183 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 184 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 185 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 186 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 187 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 188 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 189 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 190 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 191 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 192 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 193 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 194 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 195 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 196 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 197 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 198 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+frame 199 agent 0
+  referee: Pod 1 of player $0 moves towards (12685, 1923) at power 100
+  stdout: 12685 1923 100
+frame 200 agent 1
+  referee: Pod 1 of player $1 moves towards (4015, 7802) at power 100
+  summary: $0 eliminated! rank: 2
+      $1 rank: 1
+  stdout: 4015 7802 100
+result
+  scores: 0=0 1=2
+  ranking (agent indexes, winner first): 1 0
+  tooltips: frame 200: $0 did not reach the next checkpoint in time

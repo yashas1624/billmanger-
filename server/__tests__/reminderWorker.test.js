@@ -198,3 +198,4 @@ describe('Background Worker & Scheduler', () => {
     assert.strictEqual(overdueBill.status, BillStatus.OVERDUE);
   });
 });
+

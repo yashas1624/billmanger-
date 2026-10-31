@@ -80,3 +80,4 @@ export function validateAndFormatBill(data = {}) {
     updatedAt: new Date().toISOString()
   };
 }
+

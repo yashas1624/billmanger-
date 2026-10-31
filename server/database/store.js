@@ -155,3 +155,4 @@ export class Store {
 
 // Global default singleton store
 export const defaultStore = new Store();
+

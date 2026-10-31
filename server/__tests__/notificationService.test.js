@@ -96,3 +96,4 @@ describe('Modular Notification Service', () => {
     assert.deepStrictEqual(service.getProviderNames(), ['SecondMock']);
   });
 });
+

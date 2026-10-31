@@ -55,3 +55,4 @@ model Bill {
   @@index([userId])
   @@map("bills")
 }
+

@@ -103,3 +103,4 @@ export function createUserRouter(store = defaultStore) {
 
   return router;
 }
+

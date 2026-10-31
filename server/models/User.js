@@ -52,3 +52,4 @@ export function validateAndFormatUser(data = {}) {
     updatedAt: new Date().toISOString()
   };
 }
+

@@ -103,3 +103,4 @@ export function initializeDatabase(store = defaultStore, referenceDate = new Dat
   store.seed(SEED_USERS, getSeedBills(referenceDate));
   return store;
 }
+

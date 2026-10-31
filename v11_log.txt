@@ -1,0 +1,816 @@
+status: done
+game 913360956
+options: seed=71007787
+    pod_timeout=100
+    map=5491 7526 4489 6008 13498 1985
+    pod_per_player=1
+agents:
+  0 cobra_x (me, agent_id -1)
+  1 Boss 2 (agent_id 415946)
+frame 0
+  summary: $0 rank: 1
+      $1 rank: 1
+frame 1 agent 0
+  referee: Pod 1 of player $0 moves towards (4489, 6008) at power 100
+  stdout: 4489 6008 100
+frame 2 agent 1
+  referee: Pod 1 of player $1 moves towards (4489, 6008) at power 100
+  summary: $0 rank: 1
+      $1 rank: 2
+  stdout: 4489 6008 100
+frame 3 agent 0
+  referee: Pod 1 of player $0 moves towards (5043, 7706) at power 50
+  stdout: 5043 7706 50
+frame 4 agent 1
+  referee: Pod 1 of player $1 moves towards (4489, 6008) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4489 6008 100
+frame 5 agent 0
+  referee: Pod 1 of player $0 moves towards (5017, 7626) at power 50
+  stdout: 5017 7626 50
+frame 6 agent 1
+  referee: Pod 1 of player $1 moves towards (4489, 6008) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4489 6008 100
+frame 7 agent 0
+  referee: Pod 1 of player $0 moves towards (4995, 7558) at power 50
+  stdout: 4995 7558 50
+frame 8 agent 1
+  referee: Pod 1 of player $1 moves towards (4489, 6008) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4489 6008 100
+frame 9 agent 0
+  referee: Pod 1 of player $0 moves towards (4977, 7501) at power 50
+  stdout: 4977 7501 50
+frame 10 agent 1
+  referee: Pod 1 of player $1 moves towards (4489, 6008) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4489 6008 100
+frame 11 agent 0
+  referee: Pod 1 of player $0 moves towards (4962, 7453) at power 50
+  stdout: 4962 7453 50
+frame 12 agent 1
+  referee: Pod 1 of player $1 moves towards (4489, 6008) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4489 6008 100
+frame 13 agent 0
+  referee: Pod 1 of player $0 moves towards (4950, 7413) at power 50
+  stdout: 4950 7413 50
+frame 14 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 50
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 50 I want to turn faster!
+frame 15 agent 0
+  referee: Pod 1 of player $0 moves towards (4940, 7379) at power 50
+  stdout: 4940 7379 50
+frame 16 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 50
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 50 I want to turn faster!
+frame 17 agent 0
+  referee: Pod 1 of player $0 moves towards (4932, 7351) at power 50
+  stdout: 4932 7351 50
+frame 18 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100 I want to turn faster!
+frame 19 agent 0
+  referee: Pod 1 of player $0 moves towards (4926, 7328) at power 50
+  stdout: 4926 7328 50
+frame 20 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100 I want to turn faster!
+frame 21 agent 0
+  referee: Pod 1 of player $0 moves towards (4921, 7309) at power 50
+  stdout: 4921 7309 50
+frame 22 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100 I want to turn faster!
+frame 23 agent 0
+  referee: Pod 1 of player $0 moves towards (4917, 7293) at power 50
+  stdout: 4917 7293 50
+frame 24 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100 I want to turn faster!
+frame 25 agent 0
+  referee: Pod 1 of player $0 moves towards (4914, 7280) at power 50
+  stdout: 4914 7280 50
+frame 26 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100 I want to turn faster!
+frame 27 agent 0
+  referee: Pod 1 of player $0 moves towards (4912, 7269) at power 50
+  stdout: 4912 7269 50
+frame 28 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 29 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7260) at power 50
+  stdout: 4911 7260 50
+frame 30 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 31 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7253) at power 50
+  stdout: 4911 7253 50
+frame 32 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 33 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7248) at power 50
+  stdout: 4911 7248 50
+frame 34 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 35 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7244) at power 50
+  stdout: 4911 7244 50
+frame 36 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 37 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7241) at power 50
+  stdout: 4911 7241 50
+frame 38 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 39 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7239) at power 50
+  stdout: 4911 7239 50
+frame 40 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 41 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 42 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 43 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 44 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 45 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 46 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 47 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 48 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 49 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 50 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 51 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 52 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 53 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 54 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 55 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 56 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 57 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 58 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 59 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 60 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 61 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 62 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 63 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 64 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100 Argh! I need to slow down!
+frame 65 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 66 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 50
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 50 Argh! I need to slow down!
+frame 67 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 68 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 50
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 50 Argh! I need to slow down!
+frame 69 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 70 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100 Argh! I need to slow down!
+frame 71 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 72 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100 Argh! I need to slow down!
+frame 73 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 74 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100 Argh! I need to slow down!
+frame 75 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 76 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100 Argh! I need to slow down!
+frame 77 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 78 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100 Argh! I need to slow down!
+frame 79 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 80 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100
+frame 81 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 82 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100
+frame 83 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 84 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100
+frame 85 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 86 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100
+frame 87 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 88 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100
+frame 89 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 90 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100
+frame 91 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 92 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100
+frame 93 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 94 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100
+frame 95 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 96 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100
+frame 97 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 98 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100
+frame 99 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 100 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100
+frame 101 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 102 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100
+frame 103 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 104 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100
+frame 105 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 106 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100
+frame 107 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 108 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100
+frame 109 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 110 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100
+frame 111 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 112 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100
+frame 113 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 114 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100
+frame 115 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 116 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100
+frame 117 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 118 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100
+frame 119 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 120 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 100
+frame 121 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 122 agent 1
+  referee: Pod 1 of player $1 moves towards (4489, 6008) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4489 6008 100 I want to turn faster!
+frame 123 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 124 agent 1
+  referee: Pod 1 of player $1 moves towards (4489, 6008) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4489 6008 100 I want to turn faster!
+frame 125 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 80
+  stdout: 4911 7238 80
+frame 126 agent 1
+  referee: Pod 1 of player $1 moves towards (4489, 6008) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4489 6008 100 I want to turn faster!
+frame 127 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 128 agent 1
+  referee: Pod 1 of player $1 moves towards (4489, 6008) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4489 6008 100 I want to turn faster!
+frame 129 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 130 agent 1
+  referee: Pod 1 of player $1 moves towards (4489, 6008) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4489 6008 100 I want to turn faster!
+frame 131 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 132 agent 1
+  referee: Pod 1 of player $1 moves towards (4489, 6008) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4489 6008 100 I want to turn faster!
+frame 133 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 134 agent 1
+  referee: Pod 1 of player $1 moves towards (4489, 6008) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4489 6008 100 I want to turn faster!
+frame 135 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 136 agent 1
+  referee: Pod 1 of player $1 moves towards (4489, 6008) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4489 6008 100 I want to turn faster!
+frame 137 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 138 agent 1
+  referee: Pod 1 of player $1 moves towards (4489, 6008) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4489 6008 100 I want to turn faster!
+frame 139 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 140 agent 1
+  referee: Pod 1 of player $1 moves towards (4489, 6008) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4489 6008 100 I want to turn faster!
+frame 141 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 142 agent 1
+  referee: Pod 1 of player $1 moves towards (4489, 6008) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4489 6008 100 I want to turn faster!
+frame 143 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 144 agent 1
+  referee: Pod 1 of player $1 moves towards (4489, 6008) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4489 6008 100 I want to turn faster!
+frame 145 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 146 agent 1
+  referee: Pod 1 of player $1 moves towards (4489, 6008) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4489 6008 100 I want to turn faster!
+frame 147 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 148 agent 1
+  referee: Pod 1 of player $1 moves towards (4489, 6008) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4489 6008 100 I want to turn faster!
+frame 149 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 150 agent 1
+  referee: Pod 1 of player $1 moves towards (4489, 6008) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4489 6008 100 I want to turn faster!
+frame 151 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 152 agent 1
+  referee: Pod 1 of player $1 moves towards (4489, 6008) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4489 6008 100 I want to turn faster!
+frame 153 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 154 agent 1
+  referee: Pod 1 of player $1 moves towards (4489, 6008) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 4489 6008 100 I want to turn faster!
+frame 155 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 156 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 50
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 50 I want to turn faster!
+frame 157 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 158 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100 I want to turn faster!
+frame 159 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 160 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100 I want to turn faster!
+frame 161 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 100
+  stdout: 4911 7238 100
+frame 162 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100 I want to turn faster!
+frame 163 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 164 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100 I want to turn faster!
+frame 165 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 166 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100 I want to turn faster!
+frame 167 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 168 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100 I want to turn faster!
+frame 169 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 170 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 171 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 172 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 173 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 174 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 175 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 176 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 177 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 178 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 179 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 180 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 181 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 182 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 183 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 184 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 185 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 186 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 187 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 188 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 189 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 190 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 191 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 192 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 193 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 194 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 195 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 196 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 197 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 198 agent 1
+  referee: Pod 1 of player $1 moves towards (13498, 1985) at power 100
+  summary: $0 rank: 2
+      $1 rank: 1
+  stdout: 13498 1985 100
+frame 199 agent 0
+  referee: Pod 1 of player $0 moves towards (4911, 7238) at power 50
+  stdout: 4911 7238 50
+frame 200 agent 1
+  referee: Pod 1 of player $1 moves towards (5491, 7526) at power 50
+  summary: $0 eliminated! rank: 2
+      $1 rank: 1
+  stdout: 5491 7526 50
+result
+  scores: 0=0 1=2
+  ranking (agent indexes, winner first): 1 0
+  tooltips: frame 200: $0 did not reach the next checkpoint in time

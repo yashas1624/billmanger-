@@ -66,3 +66,4 @@ export function isPastDate(targetDate, referenceDate = new Date()) {
 export function isSameDay(dateA, dateB) {
   return toDateString(dateA) === toDateString(dateB);
 }
+

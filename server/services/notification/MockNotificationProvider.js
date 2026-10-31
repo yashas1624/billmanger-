@@ -50,3 +50,4 @@ export class MockNotificationProvider extends INotificationProvider {
     return record;
   }
 }
+

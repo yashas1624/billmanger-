@@ -69,3 +69,4 @@ export class EmailNotificationProvider extends INotificationProvider {
     }
   }
 }
+
