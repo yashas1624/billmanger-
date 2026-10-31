@@ -8,6 +8,8 @@ export const INITIAL_BILLS = [
     currency: '$',
     dueDate: new Date(Date.now() + 2 * 24 * 60 * 60 * 1000).toISOString().split('T')[0], // 2 days from now
     status: 'due_soon', // 'paid', 'due_soon', 'overdue', 'pending'
+    reminderSent: false,
+    isRecurring: true,
     frequency: 'Monthly',
     isSplit: true,
     splitMembers: [
@@ -32,6 +34,8 @@ export const INITIAL_BILLS = [
     currency: '$',
     dueDate: new Date(Date.now() + 3 * 24 * 60 * 60 * 1000).toISOString().split('T')[0], // 3 days from now
     status: 'due_soon',
+    reminderSent: false,
+    isRecurring: true,
     frequency: 'Monthly',
     isSplit: true,
     splitMembers: [
@@ -55,6 +59,8 @@ export const INITIAL_BILLS = [
     currency: '$',
     dueDate: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000).toISOString().split('T')[0], // 1 day overdue
     status: 'overdue',
+    reminderSent: false,
+    isRecurring: true,
     frequency: 'Monthly',
     isSplit: false,
     splitMembers: [],
@@ -75,6 +81,8 @@ export const INITIAL_BILLS = [
     currency: '$',
     dueDate: new Date(Date.now() + 5 * 24 * 60 * 60 * 1000).toISOString().split('T')[0], // 5 days from now
     status: 'due_soon',
+    reminderSent: false,
+    isRecurring: true,
     frequency: 'Monthly',
     isSplit: true,
     splitMembers: [
@@ -98,6 +106,8 @@ export const INITIAL_BILLS = [
     currency: '$',
     dueDate: new Date(Date.now() + 12 * 24 * 60 * 60 * 1000).toISOString().split('T')[0], // 12 days from now
     status: 'pending',
+    reminderSent: false,
+    isRecurring: true,
     frequency: 'Monthly',
     isSplit: false,
     splitMembers: [],
@@ -118,6 +128,8 @@ export const INITIAL_BILLS = [
     currency: '$',
     dueDate: new Date(Date.now() - 4 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
     status: 'paid',
+    reminderSent: false,
+    isRecurring: true,
     frequency: 'Monthly',
     isSplit: false,
     splitMembers: [],
@@ -138,6 +150,8 @@ export const INITIAL_BILLS = [
     currency: '$',
     dueDate: new Date(Date.now() - 6 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
     status: 'paid',
+    reminderSent: false,
+    isRecurring: true,
     frequency: 'Monthly',
     isSplit: false,
     splitMembers: [],
@@ -158,6 +172,8 @@ export const INITIAL_BILLS = [
     currency: '$',
     dueDate: new Date(Date.now() - 10 * 24 * 60 * 60 * 1000).toISOString().split('T')[0],
     status: 'paid',
+    reminderSent: false,
+    isRecurring: true,
     frequency: 'Monthly',
     isSplit: false,
     splitMembers: [],

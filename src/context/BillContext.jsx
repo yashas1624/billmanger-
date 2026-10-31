@@ -73,9 +73,11 @@ export function BillProvider({ children }) {
     const prevBills = [...bills];
     setBills(prev => prev.map(b => {
       if (b.id === id) {
+        const isRecurring = Boolean(b.isRecurring || (b.frequency && b.frequency.toLowerCase() !== 'one-time'));
         return {
           ...b,
           status: 'paid',
+          reminderSent: isRecurring ? false : b.reminderSent,
           history: [
             {
               date: new Date().toISOString().split('T')[0],
@@ -95,7 +97,11 @@ export function BillProvider({ children }) {
   };
 
   const addBill = (newBill) => {
+    const isRecurring = Boolean(newBill.isRecurring || (newBill.frequency && newBill.frequency.toLowerCase() !== 'one-time'));
     const created = {
+      reminderSent: false,
+      isRecurring,
+      status: 'pending',
       ...newBill,
       id: `bill-${Date.now()}`,
       history: [

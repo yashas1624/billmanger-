@@ -5,6 +5,8 @@ export const USER_INITIAL = {
   name: 'Yashas S',
   mobile: '+91 98765 43210',
   email: 'yashas.s@example.com',
+  pushToken: 'ExponentPushToken[yashas_sample]',
+  reminderDaysBefore: 3,
   avatar: null,
   upiId: 'yashas.s@paytm',
   kycStatus: 'verified',

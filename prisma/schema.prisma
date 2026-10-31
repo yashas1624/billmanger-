@@ -1,0 +1,57 @@
+// Prisma Schema for Bill Manager Application
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+enum BillStatus {
+  PENDING
+  PAID
+  OVERDUE
+}
+
+model User {
+  id                 String   @id @default(uuid())
+  name               String
+  email              String   @unique
+  pushToken          String?
+  reminderDaysBefore Int      @default(3)
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  bills              Bill[]
+
+  @@map("users")
+}
+
+model Bill {
+  id                 String     @id @default(uuid())
+  title              String
+  vendor             String?
+  category           String     @default("General")
+  amount             Float
+  currency           String     @default("$")
+  dueDate            DateTime
+  reminderSent       Boolean    @default(false)
+  status             BillStatus @default(PENDING)
+  isRecurring        Boolean    @default(false)
+  frequency          String?    @default("Monthly") // e.g. "Monthly", "Weekly", "Yearly", "One-time"
+  notes              String?
+  receiptUrl         String?
+  receiptName        String?
+  
+  userId             String
+  user               User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt          DateTime   @default(now())
+  updatedAt          DateTime   @updatedAt
+
+  @@index([status, reminderSent, dueDate])
+  @@index([userId])
+  @@map("bills")
+}
